@@ -1,7 +1,7 @@
 .navbar { 
    background-color: black;
    display: flex;
-   justify-content: flex-end;
+   justify-content: space-between;
    align-items: center;
    padding: 30px 10%;
    font-weight: 600;
@@ -54,4 +54,10 @@ a button {
         font-weight: 600;
         font-size: 18px;
         color: antiquewhite;
+}
+
+.fotologo {
+    height: 6%;
+    width: 6%;
+    cursor: pointer;
 }
