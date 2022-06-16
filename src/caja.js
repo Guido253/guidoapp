@@ -1,3 +1,5 @@
+import './caja.css'
+
 function Caja (props){
     return (
       <div className="caja"> 
