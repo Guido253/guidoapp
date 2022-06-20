@@ -33,13 +33,13 @@ li, a {
 }
 
 .navLinks li a:hover {
-    color: #0088a9;
+    color: rgb(171, 123, 22);
 }
 
 button {
     margin-left: 20px;
     padding: 9px 25px;
-    background-color: rgba(0, 136, 169, 1);
+    background-color: rgb(171, 123, 22);
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -60,4 +60,18 @@ a button {
     height: 6%;
     width: 6%;
     cursor: pointer;
+}
+
+.icono {
+    color: aliceblue;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.icono {
+    transition: all 0.3s ease 0s;
+}
+
+.icono:hover {
+    background-color: rgb(171, 123, 22);
 }

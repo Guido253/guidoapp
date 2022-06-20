@@ -1,13 +1,15 @@
 import './App.css';
 import Navbar from './components/Navbar';
-import Caja from './caja';
+import Body from './components/Body';
+
 
 function App() {
   return (
     <div>
       
        <Navbar />
-       <Caja nombre='Guido' />
+       <Body />
+       <Body />
     </div>
   );
 }

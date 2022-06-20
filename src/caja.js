@@ -1,11 +1,10 @@
-import './caja.css'
+import './Caja.css'
 
-function Caja (props){
+function Caja ({producto , descripcion}){
     return (
       <div className="caja"> 
-      <p>
-          Buenas Noches {props.nombre}!
-      </p>
+     <h4>{producto}</h4>
+     <p>{descripcion}</p>
       </div>
     );
   }

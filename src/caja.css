@@ -1,10 +1,11 @@
 .caja {
     background-color: black;
-    margin-top: 10%;
-    padding: 5%;
+    height: 250px;
+    width: 500px;
     color: aliceblue;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 300%;
-    text-align: center;
-    font-weight: 700;
+    margin-top: 5%;
+}
+
+.caja, h4, p {
+    margin: 5%
 }

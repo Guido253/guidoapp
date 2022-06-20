@@ -9,16 +9,21 @@ function Navbar() {
       <img className='fotologo' src= {foto}></img>
       <ul className='navLinks'>
         <li>
-        <a href='http://localhost:3000/'>Tragos</a>
+        <a href='#'>Tragos</a>
         </li>
         <li>
-          <a href='http://localhost:3000/'>Comidas</a>
+          <a href='#'>Comidas</a>
         </li>
         <li>
-        <a href='http://localhost:3000/'>Cervezas</a> 
+        <a href='#'>Cervezas Tiradas!</a> 
         </li>
         </ul>
         <a className='boton' href='#'><button>Contacto</button></a>
+
+        <div className = 'icono'> 
+        <ion-icon name="cart-outline"></ion-icon>
+        </div>
+
         </nav>
     </header>
   );
