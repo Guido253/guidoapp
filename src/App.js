@@ -1,15 +1,18 @@
 import './App.css';
 import Navbar from './components/Navbar';
-import Body from './components/Body';
+import Hello from './components/Hello';
+import CartWidget from './components/CartWidget';
+import ItemListContainer from './components/ItemListContainer';
+
 
 
 function App() {
   return (
     <div>
-      
-       <Navbar />
-       <Body />
-       <Body />
+       <Navbar> <CartWidget /> </Navbar>
+       <ItemListContainer />
+       <ItemListContainer />
+       <Hello/>
     </div>
   );
 }

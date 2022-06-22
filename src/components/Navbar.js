@@ -20,10 +20,6 @@ function Navbar() {
         </ul>
         <a className='boton' href='#'><button>Contacto</button></a>
 
-        <div className = 'icono'> 
-        <ion-icon name="cart-outline"></ion-icon>
-        </div>
-
         </nav>
     </header>
   );

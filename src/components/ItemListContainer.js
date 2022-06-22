@@ -1,8 +1,8 @@
-import Caja from '../Caja';
-import './Body.css';
+import Caja from './item';
+import './ItemListContainer.css';
 
 
-function Body (){
+function ItemListContainer (){
     return (
     <section className="cuerpo"> 
      <Caja producto='Hamburguesa' descripcion= 'Completa'/>
@@ -13,6 +13,6 @@ function Body (){
     );
   }
   
-  export default Body;
+  export default ItemListContainer;
 
 

@@ -1,6 +1,6 @@
-import './Caja.css'
+import './item.css'
 
-function Caja ({producto , descripcion}){
+function item ({producto , descripcion}){
     return (
       <div className="caja"> 
      <h4>{producto}</h4>
@@ -9,4 +9,4 @@ function Caja ({producto , descripcion}){
     );
   }
   
-  export default Caja;
+  export default item;

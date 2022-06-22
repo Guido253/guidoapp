@@ -1,0 +1,13 @@
+.icono {
+    color: aliceblue;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.icono {
+    transition: all 0.3s ease 0s;
+}
+
+.icono:hover {
+    background-color: rgb(171, 123, 22);
+}
