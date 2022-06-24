@@ -3,5 +3,6 @@
      flex-direction: row;
      justify-content: space-around;
      align-items: center;
-     margin: 0.5%;
+     margin: 3%;
+     padding: 70px;
 }

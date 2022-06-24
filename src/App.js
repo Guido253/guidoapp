@@ -1,18 +1,16 @@
+import React from 'react'
 import './App.css';
-import Navbar from './components/Navbar';
-import Hello from './components/Hello';
-import CartWidget from './components/CartWidget';
 import ItemListContainer from './components/ItemListContainer';
-
+import Navbar from './components/Navbar';
 
 
 function App() {
   return (
-    <div>
-       <Navbar> <CartWidget /> </Navbar>
+    <div className='bodyapp'>
+       <Navbar />
        <ItemListContainer />
        <ItemListContainer />
-       <Hello/>
+       
     </div>
   );
 }

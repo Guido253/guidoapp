@@ -1,0 +1,25 @@
+.item {
+    background-color: black;
+    height: 250px;
+    width: 500px;
+    color: aliceblue;
+    margin-top: 3%;
+}
+
+.item, h4, p {
+    margin: 5%
+}
+
+.body {
+    background-color: rgb(171, 123, 22);
+}
+
+.boton2 {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgb(171, 123, 22);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}

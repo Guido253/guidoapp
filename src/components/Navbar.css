@@ -1,13 +1,13 @@
-.navbar { 
+.navbar1 { 
    background-color: black;
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 30px 10%;
+   padding: 20px 10%;
    font-weight: 600;
 }
 
-li, a {
+.li, .titulo {
     text-decoration: none;
     font-weight: 600;
     color: antiquewhite;
@@ -19,38 +19,37 @@ li, a {
     margin-right: auto;
 }
 
-.navLinks {
+.navLinks1 , .boton {
     list-style: none;
 }
 
-.navLinks li {
+.navLinks1 .li {
     display: inline-block;
     padding: 0px 20px;
 }
 
-.navLinks li a {
+.navLinks1 .li .titulo {
     transition: all 0.3s ease 0s;
 }
 
-.navLinks li a:hover {
+.navLinks1 .li a:hover {
     color: rgb(171, 123, 22);
 }
-
-button {
+.boton {
     margin-left: 20px;
-    padding: 9px 25px;
+    padding: 7px 35px;
     background-color: rgb(171, 123, 22);
     border: none;
-    border-radius: 50px;
+    border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
 
-button:hover {
+.boton:hover {
     background-color: rgba(0, 136, 169, 0.8);
 }
 
-a button {
+.titulo .boton {
         font-weight: 600;
         font-size: 18px;
         color: antiquewhite;
