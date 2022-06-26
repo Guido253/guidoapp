@@ -2,6 +2,7 @@ import React from 'react';
 import './Navbar.css';
 import foto from '../assets/img/foto.png';
 import CartWidget from './CartWidget';
+import {Button} from 'react-bootstrap';
 
 
 
@@ -21,7 +22,7 @@ function Navbar() {
         <a className='titulo' href='#'>Cervezas Tiradas!</a> 
         </li>
         </ul>
-        <a className='boton' href='#'><button>Contacto</button></a>
+        <Button variant="warning">Contacto</Button>
       <CartWidget />
         </nav>
     </header>

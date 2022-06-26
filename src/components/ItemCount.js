@@ -8,12 +8,24 @@ function ItemCount () {
     const [num, setNum] = useState (0);
 
     const sumar = () => {
+        if (num<6) {
         setNum (num + 1)
+        }
+        else {
+            alert ("Superaste el número de productos por persona")
+        }
+    }
+
+    const resta = () => {
+        if (num>0) {
+        setNum (num - 1)
+        }
     }
     return (
         <div>
-            <p>Agregaste {num} Producto</p>
-            <Button onClick={sumar} variant="warning">Agregar al Carrito</Button>
+            <p className='numCar'>Agregaste {num} Producto</p>
+            <Button onClick={sumar} variant="warning" className='botonCarrito'>Agregar al Carrito</Button>
+            <Button onClick={resta} variant="dark">Quitar del Carrito</Button>
         </div>
     )
 }
