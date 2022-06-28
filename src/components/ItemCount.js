@@ -12,7 +12,8 @@ function ItemCount () {
         setNum (num + 1)
         }
         else {
-            alert ("Superaste el número de productos por persona")
+           setTimeout (() => alert ("Superaste el número de productos por persona"), 2000)
+           console.log ("tardó más de 2 segundos");
         }
     }
 
