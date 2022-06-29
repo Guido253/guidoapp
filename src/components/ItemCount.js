@@ -22,12 +22,25 @@ function ItemCount () {
         setNum (num - 1)
         }
     }
+
+    const botonCarrito = () => {
+        console.log (`envió al carrito ${num} productos`)
+    }
+
     return (
+        <div>
+            <div className='botcar'>
+            <Button onClick={botonCarrito} variant="dark"> Agregar al Carrito</Button>
+            </div>
+
         <div className='divBut'>
             <Button onClick={sumar} variant="warning" className='botonCarrito'>+</Button>
             <p className='numCar'>{num}</p>
             <Button onClick={resta} variant="dark">-</Button>
         </div>
+        </div>
+
+        
     )
 }
 
