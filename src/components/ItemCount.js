@@ -23,10 +23,10 @@ function ItemCount () {
         }
     }
     return (
-        <div>
-            <p className='numCar'>Agregaste {num} Producto</p>
-            <Button onClick={sumar} variant="warning" className='botonCarrito'>Agregar al Carrito</Button>
-            <Button onClick={resta} variant="dark">Quitar del Carrito</Button>
+        <div className='divBut'>
+            <Button onClick={sumar} variant="warning" className='botonCarrito'>+</Button>
+            <p className='numCar'>{num}</p>
+            <Button onClick={resta} variant="dark">-</Button>
         </div>
     )
 }

@@ -4,5 +4,15 @@
 
 .numCar {
     font-weight: 900;
-    color: rgb(210, 162, 30);
+    color: black;
+    background-color: rgb(210, 162, 30);
+    margin: 2%;
+    padding: 9px;
+    padding-top: 6px;
+}
+
+.divBut {
+    display: flex;
+    justify-content: center;
+   align-items: center;
 }

@@ -2,40 +2,40 @@
     {"title": "Cerveza",
      "stock": 8,
      "precio": 500,
-     "definicion": "Marinada con Salsa de Soja, ajo y Laurel. Viene con Cebolla caramelizada y Tomate",
+     "definicion": "Cerveza en Lata 4 gatos locos. Lúpulo francés con un fuerte sabor acaramelado.",
      "id": 1,
-     "img": "burga.jpg"
+     "img": "cerve.jpg"
     },
 
     {"title": "Hamburguesa",
         "stock": 10,
         "precio": 900,
-        "definicion": "Marinada con Salsa de Soja, ajo y Laurel. Viene con Cebolla caramelizada y Tomate",
+        "definicion": "Marinada con Salsa de Soja, ajo y Laurel. Viene con Cebolla caramelizada y Tomate.",
         "id": 2,
         "img": "burga.jpg"
        },
 
        {"title": "Burrito",
         "stock": 8,
-        "precio": 705,
-        "definicion": "Marinada con Salsa de Soja, ajo y Laurel. Viene con Cebolla caramelizada y Tomate",
+        "precio": 750,
+        "definicion": "Con una mezcla de carne de Vaca y Cerdo desmenuzada y adobada con salsa de ostras.",
         "id": 3,
-        "img": "burga.jpg"
+        "img": "burrito.jpg"
        },
 
        {"title": "Whiskey",
         "stock": 5,
         "precio": 1900,
-        "definicion": "Marinada con Salsa de Soja, ajo y Laurel. Viene con Cebolla caramelizada y Tomate",
+        "definicion": "Johnnie Walker etiqueta Negra, Roja o Dorada. Diferentes medidas a disposición.",
         "id": 4,
-        "img": "burga.jpg"
+        "img": "jaky.jpg"
        },
 
        {"title": "Cerveza Tirada",
         "stock": 20,
         "precio": 1200,
-        "definicion": "Marinada con Salsa de Soja, ajo y Laurel. Viene con Cebolla caramelizada y Tomate",
+        "definicion": "Cerveza Tirada Hopson. American Amber Ale. Suave, Roja y dulce.",
         "id": 5,
-        "img": "burga.jpg"
+        "img": "cerveti.jpg"
        }
 ]
