@@ -1,23 +1,24 @@
 import React from 'react';
-
+import { useEffect, useState } from 'react';
 import Item from './Item';
 import './ItemListContainer.css';
-import cerveza from '../assets/img/cerve.jpg';
-import burga from '../assets/img/burga.jpg';
+
 
 
 function ItemListContainer (){
 
- 
+  const [info , setInfo] = useState ([])
+
+  useEffect (() => {
+    fetch('data.json')
+    .then ((resp) => resp.json ())
+    .then ((data) => setInfo (data))
+
+  }, [])
+
     return (
     <section className="cuerpo"> 
-
-   
-    <Item articulo='Hamburguesa' definicion='Marinada con Salsa de Soja, ajo y Laurel. Viene con Cebolla caramelizada y Tomate' Img={burga} />
-    <Item articulo='Cerveza Hopson' definicion='American Amber Ale: Cerveza colorada. Con lúpulo americano y sabor a fresa' Img={cerveza}/>
-    <Item articulo='Hamburguesa' definicion='Marinada con Salsa de Soja, ajo y Laurel. Viene con Cebolla caramelizada y Tomate' Img={burga}/>
-    <Item articulo='Cerveza Hopson' definicion='American Amber Ale: Cerveza colorada. Con lúpulo americano y sabor a fresa' Img={cerveza}/>
-    
+      {info.map(i => <Item title={i.title}  definicion = {i.definicion} precio ={i.precio} Img = {i.img} />)}
      </section>
 
     );

@@ -1,41 +1,41 @@
 [
-    {"nombre": "Cerveza",
+    {"title": "Cerveza",
      "stock": 8,
      "precio": 500,
      "definicion": "Marinada con Salsa de Soja, ajo y Laurel. Viene con Cebolla caramelizada y Tomate",
      "id": 1,
-     "img": "../src/assets/cerve.jpg"
+     "img": "burga.jpg"
     },
 
-    {"nombre": "Hamburguesa",
+    {"title": "Hamburguesa",
         "stock": 10,
         "precio": 900,
         "definicion": "Marinada con Salsa de Soja, ajo y Laurel. Viene con Cebolla caramelizada y Tomate",
         "id": 2,
-        "img": "../src/assets/burga.jpg"
+        "img": "burga.jpg"
        },
 
-       {"nombre": "Burrito",
+       {"title": "Burrito",
         "stock": 8,
         "precio": 705,
         "definicion": "Marinada con Salsa de Soja, ajo y Laurel. Viene con Cebolla caramelizada y Tomate",
         "id": 3,
-        "img": "../src/assets/burga.jpg"
+        "img": "burga.jpg"
        },
 
-       {"nombre": "Whiskey",
+       {"title": "Whiskey",
         "stock": 5,
         "precio": 1900,
         "definicion": "Marinada con Salsa de Soja, ajo y Laurel. Viene con Cebolla caramelizada y Tomate",
         "id": 4,
-        "img": "../src/assets/burga.jpg"
+        "img": "burga.jpg"
        },
 
-       {"nombre": "Cerveza Tirada",
+       {"title": "Cerveza Tirada",
         "stock": 20,
         "precio": 1200,
         "definicion": "Marinada con Salsa de Soja, ajo y Laurel. Viene con Cebolla caramelizada y Tomate",
         "id": 5,
-        "img": "../src/assets/burga.jpg"
+        "img": "burga.jpg"
        }
 ]

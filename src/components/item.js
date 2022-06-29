@@ -4,12 +4,12 @@ import {Card} from 'react-bootstrap';
 import ItemCount from './ItemCount';
 
 
-function Item ({articulo , definicion, Img}) {
+function Item ({title , definicion, precio, Img}) {
     return (
         <Card className='body' style={{ width: '18rem' }}>
-  <Card.Img variant="top" src={Img} />
+  <Card.Img variant="top" src={require (`../assets/img/${Img}`)} />
   <Card.Body>
-    <Card.Title>{articulo}</Card.Title>
+    <Card.Title>{title}: $ {precio}</Card.Title>
     <Card.Text>
       {definicion}
     </Card.Text>
