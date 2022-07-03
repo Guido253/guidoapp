@@ -29,13 +29,5 @@
         "definicion": "Johnnie Walker etiqueta Negra, Roja o Dorada. Diferentes medidas a disposición.",
         "id": 4,
         "img": "jaky.jpg"
-       },
-
-       {"title": "Cerveza Tirada",
-        "stock": 20,
-        "precio": 1200,
-        "definicion": "Cerveza Tirada Hopson. American Amber Ale. Suave, Roja y dulce.",
-        "id": 5,
-        "img": "cerveti.jpg"
        }
 ]

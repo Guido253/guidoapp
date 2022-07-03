@@ -1,0 +1,15 @@
+.titulo1 {
+    background-color: black;
+    color: aliceblue;
+    padding: 20px;
+    text-align: center;
+}
+
+.detailBody {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 6%;
+    font-weight: 600;
+    display: inline-block;
+}
