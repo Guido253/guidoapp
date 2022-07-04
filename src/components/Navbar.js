@@ -13,13 +13,13 @@ function Navbar() {
       <img className='fotologo' src= {foto}></img>
       <ul className='navLinks1'>
         <li className='li'>
-        <a className='titulo' href='#'>Tragos</a>
+        <a className='titulo' href='http://localhost:3000/'>Inicio</a>
         </li>
         <li className='li'>
-          <a className='titulo' href='#'>Comidas</a>
+          <a className='titulo' href='/comidas'>Comidas</a>
         </li>
         <li className='li'>
-        <a className='titulo' href='#'>Cervezas Tiradas!</a> 
+        <a className='titulo' href='/bebidas'>Nuestras Bebidas!</a> 
         </li>
         </ul>
         <Button variant="warning">Contacto</Button>
