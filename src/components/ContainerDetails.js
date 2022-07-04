@@ -1,11 +1,13 @@
 import React from 'react';
+import { useState} from 'react';
+import { Button } from 'react-bootstrap';
 import './ContainerDetails.css';
 import ItemDetailContainer from './ItemDetailContainer';
 
 
 function ContainerDetails () {
 
-const productosDescuentos = [
+/*const productosDescuentos = [
 
   {
     title: "Berenjenas",
@@ -35,13 +37,21 @@ const productosDescuentos = [
   id: 3,
   img: "hopson.png"
 }
+]*/
 
-]
+const [productosFetch, setProductosFetch] = useState ([])
+
+const fetchProductos = () => {
+  fetch ('data.json')
+  .then ((resp) => resp.json ())
+  .then ((data) => setProductosFetch (data) )
+}
 
     return (
         <div className='divContai'>
           <h1 className='titulo1'>Conocé nuestros Productos en Oferta!!</h1>
-          <ItemDetailContainer productos={productosDescuentos} />
+          <Button onClick = {fetchProductos} variant="btn btn-lg btn-block btn-warning d-block mx-auto">Ver ofertas</Button>
+          <ItemDetailContainer productos={productosFetch} />
         </div>
     );
 }
