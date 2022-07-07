@@ -41,7 +41,7 @@
         "precio": 600,
         "descuento": 400,
         "definicion": "Berenjenas en escabeche. Marinadas previamente con Romero, Laurel, Ajo, Vinagre y Aceite",
-        "id": 1,
+        "id": 20,
         "img": "beren.jpg"
     },
     { 
@@ -50,7 +50,7 @@
         "precio": 1200,
         "descuento": "No tiene",
         "definicion": "Cerveza Tirada Hopson. American Amber Ale. Suave, Roja, dulce y de lúpulos americanos.",
-        "id": 2,
+        "id": 7,
         "img": "cerveti.jpg"
      }
 ]

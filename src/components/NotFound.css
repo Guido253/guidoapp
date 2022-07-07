@@ -1,0 +1,17 @@
+.container h1 {
+    font-size: 160px;
+    margin: 0;
+    font-weight: 900;
+    letter-spacing: 20px;
+    -webkit-background-clip: text;
+    color: black;
+}
+
+.container {
+    padding: 50px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    min-height: 100vh;
+    background-color: rgb(171, 123, 22);
+    display: block;
+    text-align: center;
+}

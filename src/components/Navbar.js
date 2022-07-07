@@ -3,6 +3,7 @@ import './Navbar.css';
 import foto from '../assets/img/foto.png';
 import CartWidget from './CartWidget';
 import {Button} from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -13,13 +14,13 @@ function Navbar() {
       <img className='fotologo' src= {foto}></img>
       <ul className='navLinks1'>
         <li className='li'>
-        <a className='titulo' href='http://localhost:3000/'>Inicio</a>
+        <NavLink activeClassName='active' to='/'>Inicio</NavLink>
         </li>
         <li className='li'>
-          <a className='titulo' href='/comidas'>Comidas</a>
+          <NavLink activeClassName='active' to='/ofertas'>Ofertas</NavLink>
         </li>
         <li className='li'>
-        <a className='titulo' href='/bebidas'>Nuestras Bebidas!</a> 
+        <NavLink activeClassName='active' to='/bebidas'>Nuestras Bebidas!</NavLink> 
         </li>
         </ul>
         <Button variant="warning">Contacto</Button>
