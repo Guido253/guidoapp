@@ -1,10 +1,11 @@
 import React from 'react';
-import {Button} from 'react-bootstrap'
 import { useState } from 'react';
+import {Button} from 'react-bootstrap'
 import './ItemCount.css';
 
 
-function ItemCount () {
+
+function ItemCount (props) {
     const [num, setNum] = useState (0);
 
     const sumar = () => {
@@ -23,12 +24,19 @@ function ItemCount () {
         }
     }
 
+
+
+    const [title, setTitle] = useState (props.title)
+
+
     const botonCarrito = () => {
         console.log (`envió al carrito ${num} productos`)
+        setTitle (`Agregaste ${num} Productos al Carrito`)
     }
 
     return (
         <div>
+            <h4>{title}</h4>
             <div className='botcar'>
             <Button onClick={botonCarrito} variant="dark"> Agregar al Carrito</Button>
             </div>

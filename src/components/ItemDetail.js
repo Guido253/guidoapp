@@ -3,7 +3,10 @@ import './ItemDetail.css';
 import ItemCount from './ItemCount';
 import {Card} from 'react-bootstrap';
 
+
+
 function ItemDetail (props) {
+
     return (
         <div class="card-columns" className='detailBody'>
         <Card className='body1' style={{ width: '18rem' }}>
@@ -13,7 +16,7 @@ function ItemDetail (props) {
           <Card.Text>
             ${props.precio} Descuento: ${props.descuento}
           </Card.Text>
-          <ItemCount />
+          <ItemCount /> 
         </Card.Body>
       </Card>
       </div>

@@ -7,7 +7,7 @@ import ItemDetailContainer from './ItemDetailContainer';
 
 function ContainerDetails () {
 
-/*const productosDescuentos = [
+/*const fetchProductos = [
 
   {
     title: "Berenjenas",

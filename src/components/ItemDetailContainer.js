@@ -13,6 +13,7 @@ function ItemDetailContainer (props) {
                 descuento = {producto.descuento}
                 img = {producto.img}
                 />
+                
                 ))}
    </div>
     );
