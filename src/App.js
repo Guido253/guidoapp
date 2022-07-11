@@ -2,6 +2,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Bebidas from './components/Bebidas';
+import { CartProvider } from './components/CartContext';
 import ContainerDetails from './components/ContainerDetails';
 import ItemListContainer from './components/ItemListContainer';
 import Navbar from './components/Navbar';
@@ -18,6 +19,7 @@ function App() {
 
   return (
     <div className='bodyapp'>
+      <CartProvider>
        <Navbar />
         <Routes> 
           <Route path="/" element= {<ItemListContainer />}> </Route>
@@ -27,6 +29,7 @@ function App() {
         </Routes>
 
       <NuevoProducto onAddProducto={addProductoHandler}/>
+      </CartProvider>
         
     </div>
   );

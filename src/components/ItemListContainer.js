@@ -18,7 +18,7 @@ function ItemListContainer (){
 
     return (
     <section className="cuerpo"> 
-      {info.map(i => <Item title={i.title}  definicion = {i.definicion} precio ={i.precio} Img = {i.img} />)}
+      {info.map(i => <Item title={i.title}  definicion = {i.definicion} id = {i.id} precio ={i.precio} Img = {i.img} />)}
      </section>
 
     );

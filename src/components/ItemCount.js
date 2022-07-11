@@ -5,7 +5,7 @@ import './ItemCount.css';
 
 
 
-function ItemCount (props) {
+const ItemCount = ({onAdd}) => {
     const [num, setNum] = useState (0);
 
     const sumar = () => {
@@ -26,10 +26,10 @@ function ItemCount (props) {
 
 
 
-    const [title, setTitle] = useState (props.title)
+    const [title, setTitle] = useState (title)
 
 
-    const botonCarrito = () => {
+    const count = () => {
         console.log (`envió al carrito ${num} productos`)
         setTitle (`Agregaste ${num} Productos al Carrito`)
     }
@@ -38,7 +38,7 @@ function ItemCount (props) {
         <div>
             <h4>{title}</h4>
             <div className='botcar'>
-            <Button onClick={botonCarrito} variant="dark"> Agregar al Carrito</Button>
+            <Button onClick={() => onAdd(count)} variant="dark"> Agregar al Carrito</Button>
             </div>
 
         <div className='divBut'>

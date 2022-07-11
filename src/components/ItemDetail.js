@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
+import { CartContext } from './CartContext';
 import './ItemDetail.css';
 import ItemCount from './ItemCount';
 import {Card} from 'react-bootstrap';
@@ -6,6 +7,15 @@ import {Card} from 'react-bootstrap';
 
 
 function ItemDetail (props) {
+
+  const { addToCart } = useContext(CartContext);
+
+  const [purchaseCompleted, setPurchaseCompleted] = useState(false)
+
+  const onAdd = (count) => {
+    setPurchaseCompleted(true);
+    addToCart(props, count);
+  }
 
     return (
         <div class="card-columns" className='detailBody'>
@@ -16,7 +26,7 @@ function ItemDetail (props) {
           <Card.Text>
             ${props.precio} Descuento: ${props.descuento}
           </Card.Text>
-          <ItemCount /> 
+          <ItemCount onAdd={onAdd}/>
         </Card.Body>
       </Card>
       </div>
