@@ -40,18 +40,25 @@ function ContainerDetails () {
 ]*/
 
 const [productosFetch, setProductosFetch] = useState ([])
+const [isLoading, setIsLoading] = useState ([true])
 
 const fetchProductos = () => {
+  setIsLoading(true)
   fetch ('data.json')
   .then ((resp) => resp.json ())
   .then ((data) => setProductosFetch (data) )
+
+  setIsLoading(false)
+  
 }
 
+  
 
     return (
         <div className='divContai'>
           <h1 className='titulo1'>Conocé nuestros Productos en Oferta!!</h1>
           <Button onClick = {fetchProductos} variant="btn btn-lg btn-block btn-warning d-block mx-auto">Ver ofertas</Button>
+          {isLoading && <p className='pLoading'>Is Loading...</p>}
           <ItemDetailContainer productos={productosFetch} />
         </div>
     );

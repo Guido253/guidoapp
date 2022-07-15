@@ -20,7 +20,10 @@ function Navbar() {
           <NavLink activeClassName='active' to='/ofertas'>Ofertas</NavLink>
         </li>
         <li className='li'>
-        <NavLink activeClassName='active' to='/bebidas'>Nuestras Bebidas!</NavLink> 
+        <NavLink activeClassName='active' to='/detalle'>Detalle</NavLink> 
+        </li>
+        <li className='li'>
+        <NavLink activeClassName='active' to='/carrito'>Carrito</NavLink> 
         </li>
         </ul>
         <Button variant="warning">Contacto</Button>

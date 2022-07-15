@@ -5,7 +5,7 @@ import './ItemCount.css';
 
 
 
-const ItemCount = ({onAdd}) => {
+const ItemCount = ({onAdd} , props) => {
     const [num, setNum] = useState (0);
 
     const sumar = () => {
@@ -26,19 +26,19 @@ const ItemCount = ({onAdd}) => {
 
 
 
-    const [title, setTitle] = useState (title)
+    const [title, setTitle] = useState (props.title)
 
 
     const count = () => {
         console.log (`envió al carrito ${num} productos`)
         setTitle (`Agregaste ${num} Productos al Carrito`)
-    }
+    };
 
     return (
         <div>
             <h4>{title}</h4>
             <div className='botcar'>
-            <Button onClick={() => onAdd(count)} variant="dark"> Agregar al Carrito</Button>
+            <Button onClick={() => onAdd(count)} variant="dark"> Agregar al Carrito ({count.length})</Button>
             </div>
 
         <div className='divBut'>

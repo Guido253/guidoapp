@@ -3,3 +3,10 @@
     justify-content: center;
     padding: 40px;
 }
+
+.pLoading {
+    color: black;
+    font-weight: 800;
+    text-align: center;
+    padding: 10px;
+}

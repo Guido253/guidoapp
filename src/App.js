@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Bebidas from './components/Bebidas';
 import { CartProvider } from './components/CartContext';
+import CartView from './components/CartView';
 import ContainerDetails from './components/ContainerDetails';
 import ItemListContainer from './components/ItemListContainer';
 import Navbar from './components/Navbar';
@@ -23,8 +24,9 @@ function App() {
        <Navbar />
         <Routes> 
           <Route path="/" element= {<ItemListContainer />}> </Route>
-          <Route path="/bebidas" element= {<Bebidas />}></Route>
+          <Route path="/detalle" element= {<Bebidas />}></Route>
           <Route path="/ofertas" element= {<ContainerDetails />}></Route>
+          <Route path="/carrito" element= {<CartView />}></Route>
           <Route path= "*" element = {<NotFound />}></Route>
         </Routes>
 

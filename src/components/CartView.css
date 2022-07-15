@@ -1,0 +1,26 @@
+.carritoBody{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+}
+
+.tituloCarro {
+    text-align: center;
+    font-size: 70px;
+    background-color: black;
+    color: aliceblue;
+}
+
+.divButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+.buttonIcon {
+    color: aliceblue;
+    font-size: 30px;
+    cursor: pointer;
+}
