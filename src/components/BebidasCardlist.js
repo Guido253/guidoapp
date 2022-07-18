@@ -9,9 +9,9 @@ function BebidasCardlist (props) {
             {props.cards.map((card)=> (
                 <BebidasCards
                     title = {card.title} 
-                    id = {card.id}
                     definicion = {card.definicion}
-                    img = {card.img} />
+                    Precio= {card.Precio}
+                     />
             ))}
         </div>
 
